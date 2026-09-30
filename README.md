@@ -1,4 +1,4 @@
-> [!WARNING]
+> [!UYARI]
 > **Bu GitHub deposu (scrcpy>), güvenilir deposundan çatallanmıştırr.
 kaynağıdır. İsimlerinde `scrcpy` geçse bile, rastgele web sitelerinden
 sürümleri indirmeyin.***
