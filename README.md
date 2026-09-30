@@ -46,58 +46,52 @@ bilgisayarın klavyesi ve faresi. _Root_ erişimi veya cihaza yüklenecek bir uy
 [hid-keyboard]: doc/keyboard.md#physical-keyboard-simulation
 [hid-mouse]: doc/mouse.md#physical-mouse-simulation
 
-## Prerequisites
+## Ön Koşullar
 
-The Android device requires at least API 21 (Android 5.0).
+Android cihazın en az API 21 (Android 5.0) sürümüne sahip olması gerekir.
 
-[Audio forwarding](doc/audio.md) is supported for API >= 30 (Android 11+).
+[Ses aktarımı](doc/audio.md), API >= 30 (Android 11+) sürümlerinde desteklenir.
 
-Make sure you [enabled USB debugging][enable-adb] on your device(s).
+Cihazınızda/cihazlarınızda [USB hata ayıklamayı etkinleştirdiğinizden][enable-adb] emin olun.
 
 [enable-adb]: https://developer.android.com/studio/debug/dev-options#enable
 
-On some devices (especially Xiaomi), you might get the following error:
+Bazı cihazlarda (özellikle Xiaomi), aşağıdaki hatayı alabilirsiniz:
 
 ```
 Injecting input events requires the caller (or the source of the instrumentation, if any) to have the INJECT_EVENTS permission.
 ```
 
-In that case, you need to enable [an additional option][control] `USB debugging
-(Security Settings)` (this is an item different from `USB debugging`) to control
-it using a keyboard and mouse. Rebooting the device is necessary once this
-option is set.
+Bu durumda, klavye ve fare kullanarak kontrol edebilmek için `USB hata ayıklama (Güvenlik Ayarları)` adlı [ek bir seçeneği][control] etkinleştirmeniz gerekir (bu, `USB hata ayıklama` seçeneğinden farklı bir öğedir). Bu seçenek ayarlandıktan sonra cihazı yeniden başlatmak gereklidir.
 
 [control]: https://github.com/Genymobile/scrcpy/issues/70#issuecomment-373286323
 
-Note that USB debugging is not required to run scrcpy in [OTG mode](doc/otg.md).
-
-
-## Get the app
+scrcpy'yi [OTG modunda](doc/otg.md) çalıştırmak için USB hata ayıklamanın gerekli olmadığını unutmayın.
+## Uygulamayı edinin
 
  - [Linux](doc/linux.md)
- - [Windows](doc/windows.md) (read [how to run](doc/windows.md#run))
+ - [Windows](doc/windows.md) ([nasıl çalıştırılacağını](doc/windows.md#run) okuyun)
  - [macOS](doc/macos.md)
 
 
-## Must-know tips
+## Bilinmesi gereken ipuçları
 
- - [Reducing resolution](doc/video.md#size) may greatly improve performance
+ - [Çözünürlüğü düşürmek](doc/video.md#size) performansı büyük ölçüde artırabilir
    (`scrcpy -m1024`)
- - [_Right-click_](doc/mouse.md#mouse-bindings) triggers `BACK`
- - [_Middle-click_](doc/mouse.md#mouse-bindings) triggers `HOME`
- - <kbd>Alt</kbd>+<kbd>f</kbd> toggles [fullscreen](doc/window.md#fullscreen)
- - There are many other [shortcuts](doc/shortcuts.md)
+ - [_Sağ tıklama_](doc/mouse.md#mouse-bindings) `GERİ` (BACK) işlevini tetikler
+ - [_Orta tıklama_](doc/mouse.md#mouse-bindings) `ANA EKRAN` (HOME) işlevini tetikler
+ - <kbd>Alt</kbd>+<kbd>f</kbd> [tam ekran](doc/window.md#fullscreen) modunu açıp kapatır
+ - Daha pek çok [kısayol](doc/shortcuts.md) mevcuttur
 
 
-## Usage examples
+## Kullanım örnekleri
 
-There are a lot of options, [documented](#user-documentation) in separate pages.
-Here are just some common examples.
+Ayrı sayfalarda [belgelenmiş](#user-documentation) pek çok seçenek bulunmaktadır.
+İşte bunlardan bazı yaygın örnekler:
 
- - Capture the screen in H.265 (better quality), limit the size to 1920, limit
-   the frame rate to 60fps, disable audio, and control the device by simulating
-   a physical keyboard:
-
+ - Ekranı H.265 formatında (daha iyi kalite) yakalayın, boyutu 1920 ile sınırlayın,
+   kare hızını 60 fps ile sınırlayın, sesi devre dışı bırakın ve fiziksel bir
+   klavye simülasyonu ile cihazı kontrol edin:
     ```bash
     scrcpy --video-codec=h265 --max-size=1920 --max-fps=60 --no-audio --keyboard=uhid
     scrcpy --video-codec=h265 -m1920 --max-fps=60 --no-audio -K  # short version
@@ -144,67 +138,86 @@ Here are just some common examples.
     scrcpy -G  # short version
     ```
 
-## User documentation
+## Kullanıcı belgeleri
 
-The application provides a lot of features and configuration options. They are
-documented in the following pages:
+Uygulama, pek çok özellik ve yapılandırma seçeneği sunmaktadır. Bunlar aşağıdaki sayfalarda belgelenmiştir:
 
- - [Connection](doc/connection.md)
+ - [Bağlantı](doc/connection.md)
  - [Video](doc/video.md)
- - [Audio](doc/audio.md)
- - [Control](doc/control.md)
- - [Keyboard](doc/keyboard.md)
- - [Mouse](doc/mouse.md)
- - [Gamepad](doc/gamepad.md)
- - [Device](doc/device.md)
- - [Window](doc/window.md)
- - [Recording](doc/recording.md)
- - [Virtual display](doc/virtual-display.md)
- - [Tunnels](doc/tunnels.md)
+ - [Ses](doc/audio.md)
+ - [Kontrol](doc/control.md)
+ - [Klavye](doc/keyboard.md)
+ - [Fare](doc/mouse.md)
+ - [Oyun kolu](doc/gamepad.md)
+ - [Cihaz](doc/device.md)
+ - [Pencere](doc/window.md)
+ - [Kayıt](doc/recording.md)
+ - [Sanal ekran](doc/virtual-display.md)
+ - [Tüneller](doc/tunnels.md)
  - [OTG](doc/otg.md)
- - [Camera](doc/camera.md)
+ - [Kamera](doc/camera.md)
  - [Video4Linux](doc/v4l2.md)
- - [Shortcuts](doc/shortcuts.md)
+ - [Kısayollar](doc/shortcuts.md)
 
 
-## Resources
+## Kaynaklar
 
- - [FAQ](FAQ.md)
- - [Translations][wiki] (not necessarily up to date)
- - [Build instructions](doc/build.md)
- - [Developers](doc/develop.md)
- - [Verify release signatures](doc/verify-release.md)
+ - [SSS](FAQ.md)
+ - [Çeviriler][wiki] (her zaman güncel olmayabilir)
+ - [Derleme talimatları](doc/build.md)
+ - [Geliştiriciler](doc/develop.md)
+ - [Sürüm imzalarını doğrulama](doc/verify-release.md)
 
 [wiki]: https://github.com/Genymobile/scrcpy/wiki
 
 
-## Articles
+## Makaleler
 
-- [Introducing scrcpy][article-intro]
-- [Scrcpy now works wirelessly][article-tcpip]
-- [Scrcpy 2.0, with audio][article-scrcpy2]
+- [scrcpy ile tanışın][article-intro]
+- [Scrcpy artık kablosuz çalışıyor][article-tcpip]
+- [Ses desteğiyle Scrcpy 2.0][article-scrcpy2]
 
 [article-intro]: https://blog.rom1v.com/2018/03/introducing-scrcpy/
 [article-tcpip]: https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/
 [article-scrcpy2]: https://blog.rom1v.com/2023/03/scrcpy-2-0-with-audio/
 
-## Contact
-
-You can open an [issue] for bug reports, feature requests or general questions.
-
-For bug reports, please read the [FAQ](FAQ.md) first, you might find a solution
-to your problem immediately.
-
-[issue]: https://github.com/Genymobile/scrcpy/issues
-
-You can also use:
-
- - Reddit: [`r/scrcpy`](https://www.reddit.com/r/scrcpy)
- - BlueSky: [`@scrcpy.bsky.social`](https://bsky.app/profile/scrcpy.bsky.social)
- - Twitter: [`@scrcpy_app`](https://twitter.com/scrcpy_app)
-
-
-
+## İndirme Linkleri
+scrcpy-linux-x86_64-v4.1.tar.gz
+sha256:ad56ae8bfeedf41e824945c11dbf55fcb092b3e615b9b486f48a50e30d389635
+16.9 MB
+Jul 12
+scrcpy-macos-aarch64-v4.1.tar.gz
+sha256:20fd47c9014dd5e0fa77091f3cb7adbda8445a360c4584aeaa0150b5b3988ff3
+12.4 MB
+Jul 12
+scrcpy-macos-x86_64-v4.1.tar.gz
+sha256:ee2a7223bc8dbdc4f482db1134bcf441178dafb833492b71ca4c22090c58ce72
+13.3 MB
+Jul 12
+scrcpy-server-v4.1
+sha256:deacb991ed2509715160ffdc7907e47b4160eb30d1566217e9047fd5b8850cae
+717 KB
+Jul 12
+scrcpy-win32-v4.1.zip
+sha256:fa57b36622a53b6aec74c5e5b5c08236165efa445c4f186d48f176ebf9c24eec
+9.72 MB
+Jul 12
+scrcpy-win64-v4.1.zip
+sha256:5b12172b3264b2889f4583ee64752ce832e29bc8b1089dca81093459697165db
+10.8 MB
+Jul 12
+SHA256SUMS.txt
+sha256:c622ac56f2c2c1c4b84bd562f76fb1a92d10940430bd8b1ec6141dbb5e3fffbb
+556 Bytes
+Jul 12
+SHA256SUMS.txt.asc
+sha256:694a317185bedd3a730bb0d967cb487ff62e334b8d3938bcabb5b235e85e985d
+833 Bytes
+Jul 12
+Source code (zip)
+Jul 12
+Source code (tar.gz)
+Jul 12
 
 ## License
 
