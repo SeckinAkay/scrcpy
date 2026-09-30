@@ -182,41 +182,28 @@ Uygulama, pek çok özellik ve yapılandırma seçeneği sunmaktadır. Bunlar a�
 [article-scrcpy2]: https://blog.rom1v.com/2023/03/scrcpy-2-0-with-audio/
 
 ## İndirme Linkleri
-scrcpy-linux-x86_64-v4.1.tar.gz
+https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-linux-x86_64-v4.1.tar.gz
 sha256:ad56ae8bfeedf41e824945c11dbf55fcb092b3e615b9b486f48a50e30d389635
 16.9 MB
 Jul 12
-scrcpy-macos-aarch64-v4.1.tar.gz
+https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-macos-aarch64-v4.1.tar.gz
 sha256:20fd47c9014dd5e0fa77091f3cb7adbda8445a360c4584aeaa0150b5b3988ff3
 12.4 MB
 Jul 12
-scrcpy-macos-x86_64-v4.1.tar.gz
+https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-macos-x86_64-v4.1.tar.gz
 sha256:ee2a7223bc8dbdc4f482db1134bcf441178dafb833492b71ca4c22090c58ce72
 13.3 MB
-Jul 12
-scrcpy-server-v4.1
+https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-server-v4.1
 sha256:deacb991ed2509715160ffdc7907e47b4160eb30d1566217e9047fd5b8850cae
 717 KB
 Jul 12
-scrcpy-win32-v4.1.zip
+https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-win32-v4.1.zip
 sha256:fa57b36622a53b6aec74c5e5b5c08236165efa445c4f186d48f176ebf9c24eec
 9.72 MB
 Jul 12
-scrcpy-win64-v4.1.zip
+https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-win64-v4.1.zip
 sha256:5b12172b3264b2889f4583ee64752ce832e29bc8b1089dca81093459697165db
 10.8 MB
-Jul 12
-SHA256SUMS.txt
-sha256:c622ac56f2c2c1c4b84bd562f76fb1a92d10940430bd8b1ec6141dbb5e3fffbb
-556 Bytes
-Jul 12
-SHA256SUMS.txt.asc
-sha256:694a317185bedd3a730bb0d967cb487ff62e334b8d3938bcabb5b235e85e985d
-833 Bytes
-Jul 12
-Source code (zip)
-Jul 12
-Source code (tar.gz)
 Jul 12
 
 ## License
