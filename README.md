@@ -7,13 +7,8 @@ sürümleri indirmeyin.***
 
 <img src="app/data/scrcpy.svg" width="128" height="128" alt="scrcpy" align="right" />
 
-_pronounced "**scr**een **c**o**py**"_
-
-Bu uygulama, USB veya [TCP/IP](doc/connection.md#tcpip-wireless) üzerinden bağlanan Android cihazları (video ve ses) yansıtır ve aşağıdaki yöntemlerle kontrol edilmesine olanak tanır:
-
 Bu uygulama, USB veya [TCP/IP](doc/connection.md#tcpip-wireless) üzerinden bağlanan Android cihazları yansıtır ve aşağıdaki yöntemlerle kontrol edilmesini sağlar.
-computer's keyboard and mouse. It does not require _root_ access or an app
-installed on the device. It works on _Linux_, _Windows_, and _macOS_.
+bilgisayarın klavyesi ve faresi. _Root_ erişimi veya cihaza yüklenecek bir uygulama gerektirmez. _Linux_, _Windows_ ve _macOS_ üzerinde çalışır.
 
 [![Linux](https://img.shields.io/badge/Linux-download-orange?style=for-the-badge&logo=linux)](doc/linux.md)&nbsp;
 [![Windows](https://img.shields.io/badge/Windows-download-blue?style=for-the-badge&logo=windows)](doc/windows.md)&nbsp;
@@ -21,32 +16,32 @@ installed on the device. It works on _Linux_, _Windows_, and _macOS_.
 
 ![screenshot](assets/screenshot-debian-600.jpg)
 
-It focuses on:
+Şunlara odaklanır:
 
- - **lightness**: native, displays only the device screen
- - **performance**: 30~120fps, depending on the device
- - **quality**: 1920×1080 or above
- - **low latency**: [35~70ms][lowlatency]
- - **low startup time**: ~1 second to display the first image
- - **non-intrusiveness**: nothing is left installed on the Android device
- - **user benefits**: no account, no ads, no internet required
- - **freedom**: free and open source software
+ - **hafiflik**: yerel (native) yapı, yalnızca cihaz ekranını görüntüler
+ - **performans**: cihaza bağlı olarak 30~120 fps
+ - **kalite**: 1920×1080 veya üzeri
+ - **düşük gecikme süresi**: [35~70 ms][lowlatency]
+ - **hızlı başlatma**: ilk görüntünün belirmesi ~1 saniye sürer
+ - **müdahaleci olmama**: Android cihazda kalıcı hiçbir şey bırakmaz
+ - **kullanıcı avantajları**: hesap gerektirmez, reklam içermez, internet bağlantısı gerektirmez
+ - **özgürlük**: ücretsiz ve açık kaynaklı yazılım
 
-[lowlatency]: https://github.com/Genymobile/scrcpy/pull/646
 
-Its features include:
- - [audio forwarding](doc/audio.md) (Android 11+)
- - [recording](doc/recording.md)
- - [virtual display](doc/virtual-display.md)
- - mirroring with [Android device screen off](doc/device.md#turn-screen-off)
- - [copy-paste](doc/control.md#copy-paste) in both directions
- - [configurable quality](doc/video.md)
- - [camera mirroring](doc/camera.md) (Android 12+)
- - [mirroring as a webcam (V4L2)](doc/v4l2.md) (Linux-only)
- - physical [keyboard][hid-keyboard] and [mouse][hid-mouse] simulation (HID)
- - [gamepad](doc/gamepad.md) support
- - [OTG mode](doc/otg.md)
- - and more…
+
+Özellikleri şunları içerir:
+ - [ses aktarımı](doc/audio.md) (Android 11+)
+ - [kayıt](doc/recording.md)
+ - [sanal ekran](doc/virtual-display.md)
+ - [Android cihaz ekranı kapalıyken](doc/device.md#turn-screen-off) ekran yansıtma
+ - çift yönlü [kopyala-yapıştır](doc/control.md#copy-paste)
+ - [yapılandırılabilir görüntü kalitesi](doc/video.md)
+ - [kamera yansıtma](doc/camera.md) (Android 12+)
+ - [web kamerası olarak yansıtma (V4L2)](doc/v4l2.md) (yalnızca Linux)
+ - fiziksel [klavye][hid-keyboard] ve [fare][hid-mouse] simülasyonu (HID)
+ - [gamepad](doc/gamepad.md) desteği
+ - [OTG modu](doc/otg.md)
+ - ve daha fazlası…
 
 [hid-keyboard]: doc/keyboard.md#physical-keyboard-simulation
 [hid-mouse]: doc/mouse.md#physical-mouse-simulation
