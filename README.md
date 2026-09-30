@@ -1,7 +1,7 @@
 > [!WARNING]
-> **This GitHub repo (<https://github.com/Genymobile/scrcpy>) is the only official
-source for the project. Do not download releases from random websites, even if
-their name contains `scrcpy`.**
+> **Bu GitHub deposu (scrcpy>), güvenilir deposundan çatallanmıştırr.
+kaynağıdır. İsimlerinde `scrcpy` geçse bile, rastgele web sitelerinden
+sürümleri indirmeyin.***
 
 # scrcpy (v4.1)
 
@@ -9,8 +9,9 @@ their name contains `scrcpy`.**
 
 _pronounced "**scr**een **c**o**py**"_
 
-This application mirrors Android devices (video and audio) connected via USB or
-[TCP/IP](doc/connection.md#tcpip-wireless) and allows control using the
+Bu uygulama, USB veya [TCP/IP](doc/connection.md#tcpip-wireless) üzerinden bağlanan Android cihazları (video ve ses) yansıtır ve aşağıdaki yöntemlerle kontrol edilmesine olanak tanır:
+
+Bu uygulama, USB veya [TCP/IP](doc/connection.md#tcpip-wireless) üzerinden bağlanan Android cihazları yansıtır ve aşağıdaki yöntemlerle kontrol edilmesini sağlar.
 computer's keyboard and mouse. It does not require _root_ access or an app
 installed on the device. It works on _Linux_, _Windows_, and _macOS_.
 
@@ -208,17 +209,7 @@ You can also use:
  - Twitter: [`@scrcpy_app`](https://twitter.com/scrcpy_app)
 
 
-## Donate
 
-I'm [@rom1v](https://github.com/rom1v), the author and maintainer of _scrcpy_.
-
-If you appreciate this application, you can [support my open source
-work][donate]:
- - [GitHub Sponsors](https://github.com/sponsors/rom1v)
- - [Liberapay](https://liberapay.com/rom1v/)
- - [PayPal](https://paypal.me/rom2v)
-
-[donate]: https://blog.rom1v.com/about/#support-my-open-source-work
 
 ## License
 
