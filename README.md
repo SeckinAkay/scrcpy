@@ -3,7 +3,7 @@
 kaynağıdır. İsimlerinde `scrcpy` geçse bile, rastgele web sitelerinden
 sürümleri indirmeyin.***
 
-# scrcpy (v4.1)
+# cepcomputer (v4.1)
 
 <img src="app/data/scrcpy.svg" width="128" height="128" alt="scrcpy" align="right" />
 
@@ -181,30 +181,6 @@ Uygulama, pek çok özellik ve yapılandırma seçeneği sunmaktadır. Bunlar a�
 [article-tcpip]: https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/
 [article-scrcpy2]: https://blog.rom1v.com/2023/03/scrcpy-2-0-with-audio/
 
-## İndirme Linkleri
-https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-linux-x86_64-v4.1.tar.gz
-sha256:ad56ae8bfeedf41e824945c11dbf55fcb092b3e615b9b486f48a50e30d389635
-16.9 MB
-Jul 12
-https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-macos-aarch64-v4.1.tar.gz
-sha256:20fd47c9014dd5e0fa77091f3cb7adbda8445a360c4584aeaa0150b5b3988ff3
-12.4 MB
-Jul 12
-https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-macos-x86_64-v4.1.tar.gz
-sha256:ee2a7223bc8dbdc4f482db1134bcf441178dafb833492b71ca4c22090c58ce72
-13.3 MB
-https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-server-v4.1
-sha256:deacb991ed2509715160ffdc7907e47b4160eb30d1566217e9047fd5b8850cae
-717 KB
-Jul 12
-https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-win32-v4.1.zip
-sha256:fa57b36622a53b6aec74c5e5b5c08236165efa445c4f186d48f176ebf9c24eec
-9.72 MB
-Jul 12
-https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-win64-v4.1.zip
-sha256:5b12172b3264b2889f4583ee64752ce832e29bc8b1089dca81093459697165db
-10.8 MB
-Jul 12
 
 ## License
 
